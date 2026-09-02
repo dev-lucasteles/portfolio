@@ -4,13 +4,6 @@ import FadeInSection from './FadeInSection';
 
 const cardsContatos = [
   {
-    img: "/assets/sociais/telefone.png",
-    alt: "telefone",
-    topico: "Telefone",
-    contato: "22 99915-1985",
-    link: "https://api.whatsapp.com/send?phone=5522999151985"
-  },
-  {
     img: "/assets/sociais/github.png",
     alt: "github",
     topico: "Github",
