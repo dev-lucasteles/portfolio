@@ -55,11 +55,11 @@ export default function Header() {
 
                 {/* Menu Desktop */}
                 <nav className="hidden md:flex space-x-20 px-16">
-                    <a href="#sobre-mim" className="text-xl border-b-4 border-transparent transition-colors duration-300 hover:border-[#7d0000] font-medium hover:text-[#7d0000] transition-colors">Sobre</a>
-                    <a href="#tecnologias" className="text-xl border-b-4 border-transparent transition-colors duration-300 hover:border-[#7d0000] font-medium hover:text-[#7d0000] transition-colors">Tecnologias</a>
-                    <a href="#projetos" className="text-xl border-b-4 border-transparent transition-colors duration-300 hover:border-[#7d0000] font-medium hover:text-[#7d0000] transition-colors">Projetos</a>
-                    <a href="#experiencias" className="text-xl border-b-4 border-transparent transition-colors duration-300 hover:border-[#7d0000] font-medium hover:text-[#7d0000] transition-colors">Experiências</a>
-                    <a href="#rodape" className="text-xl border-b-4 border-transparent transition-colors duration-300 hover:border-[#7d0000] font-medium hover:text-[#7d0000] transition-colors">Contatos</a>
+                    <a href="#sobre-mim" className="text-xl text-gray-900 dark:text-gray-200 border-b-4 border-transparent transition-colors duration-300 hover:border-[#7d0000] font-medium hover:text-[#7d0000] dark:hover:text-[#ff4d4d]">Sobre</a>
+                    <a href="#tecnologias" className="text-xl text-gray-900 dark:text-gray-200 border-b-4 border-transparent transition-colors duration-300 hover:border-[#7d0000] font-medium hover:text-[#7d0000] dark:hover:text-[#ff4d4d]">Tecnologias</a>
+                    <a href="#projetos" className="text-xl text-gray-900 dark:text-gray-200 border-b-4 border-transparent transition-colors duration-300 hover:border-[#7d0000] font-medium hover:text-[#7d0000] dark:hover:text-[#ff4d4d]">Projetos</a>
+                    <a href="#experiencias" className="text-xl text-gray-900 dark:text-gray-200 border-b-4 border-transparent transition-colors duration-300 hover:border-[#7d0000] font-medium hover:text-[#7d0000] dark:hover:text-[#ff4d4d]">Experiências</a>
+                    <a href="#rodape" className="text-xl text-gray-900 dark:text-gray-200 border-b-4 border-transparent transition-colors duration-300 hover:border-[#7d0000] font-medium hover:text-[#7d0000] dark:hover:text-[#ff4d4d]">Contatos</a>
                 </nav>
             </div>
 

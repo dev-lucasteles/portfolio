@@ -31,10 +31,8 @@ export default function Rodape() {
     <footer id="rodape" className="bg-gray-100 dark:bg-gray-950 py-12 md:py-20 transition-colors duration-300">
       <FadeInSection>
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          
-          {/* Rodape */}
           <div className="text-center mb-8 md:mb-12">
-            <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-2 transition-colors duration-300">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-2 transition-colors duration-300">
               Contatos
             </h1>
           </div>

@@ -12,7 +12,7 @@ export default function Sobre() {
           </div>
 
           {/* Conteúdo de Texto */}
-          <div className="space-y-4 text-gray-700 dark:text-gray-300 font-sans text-base sm:text-lg md:text-xl leading-relaxed text-center sm:text-left transition-colors duration-300">
+          <div className="space-y-4 text-gray-800 dark:text-gray-300 font-sans text-base sm:text-lg md:text-2xl leading-relaxed text-center sm:text-left transition-colors duration-300">
             <p>
               Sou estudante de Engenharia de Software e atuo na área de Suporte de TI.
             </p>
