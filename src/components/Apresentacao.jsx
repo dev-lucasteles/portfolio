@@ -6,12 +6,12 @@ export default function Apresentacao() {
   const [mostrarCargos, setMostrarCargos] = useState(false);
 
   return (
-    <section className="py-12 md:py-20 bg-gray-950">
+    <section className="py-12 md:py-20 bg-gray-100 dark:bg-gray-950 transition-colors duration-300">
       <FadeInSection>
         <div className="max-w-6xl mx-auto px-4 flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-10">
           {/* Texto */}
           <div className="w-full text-center md:text-left">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-white">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-gray-900 dark:text-white transition-colors duration-300">
               <TypeAnimation
                 sequence={[
                   'Olá!\nMeu nome é Lucas\ne eu sou\n',

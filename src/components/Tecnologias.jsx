@@ -32,15 +32,15 @@ const cardsTech = [
 
 export default function Tecnologias() {
   return (
-    <section id="tecnologias" className="bg-gray-950 py-12 md:py-20">
+    <section id="tecnologias" className="bg-gray-100 dark:bg-gray-950 py-12 md:py-20 transition-colors duration-300">
       <FadeInSection>
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           {/* Cabeçalho */}
           <div className="text-center mb-8 md:mb-12">
-            <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2 animate-blurred-fade-in">
+            <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-2 transition-colors duration-300">
               Tecnologias
             </h1>
-            <h2 className="text-base sm:text-lg text-red-400 font-medium animate-blurred-fade-in px-2">
+            <h2 className="text-base sm:text-lg text-red-700 dark:text-red-400 font-medium px-2 transition-colors duration-300">
               Essas são as tecnologias que eu tenho conhecimento:
             </h2>
           </div>

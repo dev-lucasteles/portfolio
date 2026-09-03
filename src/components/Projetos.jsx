@@ -52,12 +52,15 @@ export default function Projetos() {
   const fecharModal = () => setProjetoSelecionado(null);
 
   return (
-    <section id="projetos" className="bg-gray-950 py-12 md:py-20 relative">
+    // 1. Fundo da seção: bg-gray-100 para claro, dark:bg-gray-950 para escuro
+    <section id="projetos" className="bg-gray-100 dark:bg-gray-950 py-12 md:py-20 relative transition-colors duration-300">
       <FadeInSection>
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8 md:mb-12">
-            <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2">Projetos</h1>
-            <h2 className="text-base sm:text-lg text-red-400 font-medium px-2">
+
+            <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-2 transition-colors duration-300">Projetos</h1>
+
+            <h2 className="text-base sm:text-lg text-red-700 dark:text-red-400 font-medium px-2 transition-colors duration-300">
               Esses são os projetos que eu estou desenvolvendo:
             </h2>
           </div>
@@ -80,18 +83,16 @@ export default function Projetos() {
       {/* MODAL */}
       {projetoSelecionado && (
         <div 
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm transition-opacity overflow-y-auto"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 dark:bg-black/80 p-4 backdrop-blur-sm transition-opacity overflow-y-auto"
           onClick={fecharModal}
         >
-          {/* Container principal flex: coluna no celular */}
           <div 
-            className="relative w-full max-w-5xl rounded-lg bg-[#121214] p-6 sm:p-8 shadow-2xl flex flex-col md:flex-row gap-8 my-8"
+            className="relative w-full max-w-5xl rounded-lg bg-white dark:bg-[#121214] p-6 sm:p-8 shadow-2xl flex flex-col md:flex-row gap-8 my-8 transition-colors duration-300"
             onClick={(e) => e.stopPropagation()} 
           >
-            {/* Botão de Fechar */}
             <button
               onClick={fecharModal}
-              className="absolute top-4 right-4 text-[#9f7aea] hover:text-[#b794f4] transition-colors z-10"
+              className="absolute top-4 right-4 text-[#552c92] hover:text-[#3b1d68] dark:text-[#9f7aea] dark:hover:text-[#b794f4] transition-colors z-10"
               aria-label="Fechar modal"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -100,8 +101,7 @@ export default function Projetos() {
             </button>
 
             <div className="w-full md:w-3/5 flex flex-col">
-              {/* Imagem do Projeto */}
-              <div className="w-full bg-gray-800 rounded-md overflow-hidden min-h-[250px] mb-6 flex items-center justify-center">
+              <div className="w-full bg-gray-200 dark:bg-gray-800 rounded-md overflow-hidden min-h-[250px] mb-6 flex items-center justify-center transition-colors duration-300">
                 {projetoSelecionado.img ? (
                   <img
                     src={projetoSelecionado.img}
@@ -113,7 +113,6 @@ export default function Projetos() {
                 )}
               </div>
 
-              {/* Botões de Ação */}
               <div className="flex flex-wrap gap-3 mt-auto">
                 {projetoSelecionado.linkProjeto && (
                   <a href={projetoSelecionado.linkProjeto} target="_blank" rel="noopener noreferrer" 
@@ -136,28 +135,26 @@ export default function Projetos() {
               </div>
             </div>
 
-            {/* COLUNA DIREITA: Textos e Tecnologias */}
             <div className="w-full md:w-2/5 flex flex-col pt-2 md:pt-0">
               <h3 className="text-3xl font-bold text-red-700 mb-4 pr-6">
                 {projetoSelecionado.title}
               </h3>
-              
-              <p className="text-gray-300 text-sm mb-6 leading-relaxed">
+              <p className="text-gray-700 dark:text-gray-300 text-sm mb-6 leading-relaxed transition-colors duration-300">
                 {projetoSelecionado.description || projetoSelecionado.subtitle}
               </p>
 
-              <p className="text-gray-300 text-sm mb-4">
+              <p className="text-gray-700 dark:text-gray-300 text-sm mb-4 transition-colors duration-300">
                 Esse projeto foi desenvolvido com as seguintes ferramentas:
               </p>
-              
-              <ul className="text-gray-300 text-sm mb-8 space-y-1.5 flex-grow">
+            
+              <ul className="text-gray-700 dark:text-gray-300 text-sm mb-8 space-y-1.5 flex-grow transition-colors duration-300">
                 {projetoSelecionado.tools ? (
                   projetoSelecionado.tools.map((tool, index) => (
                     <li key={index}>• {tool}</li>
                   ))
                 ) : (
                   <li>• Ferramentas não detalhadas</li>
-                )}  
+                )}
                 </ul>
             </div>
           </div>

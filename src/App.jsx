@@ -9,7 +9,7 @@ import Experiencias from './components/Experiencias';
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-950 transition-colors duration-300">
       <div className="selection:bg-gray-300 selection:text-black font-sans text-xl text-gray-800 dark:text-gray-200">
         <Header />
         <Apresentacao />

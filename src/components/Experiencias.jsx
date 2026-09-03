@@ -19,13 +19,13 @@ const cardsExp = [
 
 export default function Experiencias() {
   return (
-    <section id="experiencias" className="bg-gray-950 py-12 md:py-20">
+    <section id="experiencias" className="bg-gray-100 dark:bg-gray-950 py-12 md:py-20 transition-colors duration-300">
       <FadeInSection>
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           
           {/* Cabeçalho */}
           <div className="text-center mb-8 md:mb-12">
-            <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2 animate-blurred-fade-in">
+            <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-2 transition-colors duration-300">
               Experiências
             </h1>
           </div>

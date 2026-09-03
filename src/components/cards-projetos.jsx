@@ -5,7 +5,7 @@ export default function CardsProjetos({ img, alt, title, subtitle, onClick }) {
     return (
         <div
             onClick={onClick}
-            className="w-80 h-60 group relative flex cursor-pointer flex-col overflow-hidden rounded-xl border-b-4 border-red-500 bg-gray-700 shadow-lg transition-transform hover:-translate-y-1"
+            className="w-80 h-60 group relative flex cursor-pointer flex-col overflow-hidden rounded-xl border-b-4 border-red-500 bg-gray-200 dark:bg-gray-700 transition-colors duration-300 shadow-lg hover:-translate-y-1"
         >
             <img
                 src={img}
