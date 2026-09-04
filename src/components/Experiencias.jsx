@@ -7,13 +7,13 @@ const cardsExp = [
     cargo: "Monitor de entretenimento",
     empresa: "Búzios Beach Resort",
     tempo: "Novembro 2022 - atualmente",
-    descrição: "Experiência em organização de operações e suporte técnico \nMontagem e operação de equipamentos de som e iluminação \n Suporte técnico em eventos e atividades diversas"
+    descricao: "Experiência em organização de operações e suporte técnico. \nMontagem e operação de equipamentos de som e iluminação. \n Suporte técnico em eventos e atividades diversas"
   },
   {
     cargo: "Estagiário de suporte N1 de T.I",
     empresa: "Grupo RioMais",
     tempo: "Junho 2026 - atualmente",
-    descrição: "Triagem inicial de chamados (tickets), resolvendo problemas simples e padronizados usando scripts e manuais, e encaminhando demandas complexas para os níveis superiores (N2 ou N3)"
+    descricao: "Triagem inicial de chamados (tickets), resolvendo problemas simples e padronizados usando scripts e manuais, e encaminhando demandas complexas para os níveis superiores (N2 ou N3)"
   },
 ];
 
@@ -38,7 +38,7 @@ export default function Experiencias() {
                 cargo={card.cargo}
                 empresa={card.empresa}
                 tempo={card.tempo}
-                descrição={card.descrição}
+                descricao={card.descricao}
               />
             ))}
           </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function CardsExp({ cargo, empresa, tempo, descrição }) {
+export default function CardsExp({ cargo, empresa, tempo, descricao }) {
     return (
         <div className="
             flex flex-col justify-start
@@ -28,7 +28,7 @@ export default function CardsExp({ cargo, empresa, tempo, descrição }) {
         </p>
         
         <p className="mt-4 font-sans text-left text-base md:text-xl font-medium text-gray-700 dark:text-gray-300 opacity-90 drop-shadow-md whitespace-pre-line transition-colors duration-300">
-            {descrição}
+            {descricao}
         </p>
         </div>
     );
