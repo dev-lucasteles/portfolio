@@ -12,6 +12,9 @@ export default function Apresentacao() {
           {/* Texto */}
           <div className="w-full text-center md:text-left">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-gray-900 dark:text-white transition-colors duration-300">
+
+{/* Apresentação digitada */}
+
               <TypeAnimation
                 sequence={[
                   'Olá!\nMeu nome é Lucas\ne eu sou\n',
@@ -44,6 +47,7 @@ export default function Apresentacao() {
           </div>
 
           {/* Imagem de Perfil */}
+
           <div className="w-full flex justify-center md:justify-end items-center">
             <img
               src="/assets/perfil-lucas.jpg"
