@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from 'react'; 
 
 export default function Header() {
+
+
+          {/* menu aberto ou fechado */}
+
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+            {/* Botão ligado ou desligado darkmode*/}
     
     const [isDarkMode, setIsDarkMode] = useState(true);
 
@@ -35,7 +41,9 @@ export default function Header() {
                     peer-checked:after:border-gray-300 after:content-[''] after:absolute after:top-[2px] 
                     after:start-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all 
                     peer-checked:bg-blue-600"></div>
-                    
+
+              {/* botão switch theme*/}
+                          
                     <div className="switch">
                         <span className="select-none ms-3 text-sm font-medium text-heading dark:text-gray-200">
                             {isDarkMode ? 'Modo escuro' : 'Modo claro'}
